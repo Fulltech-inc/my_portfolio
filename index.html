@@ -1044,7 +1044,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="footer-area text-center">
-                        <p class="description mt--30">© Spencer Tasa 2025. All rights reserved</p>
+                        <p class="description mt--30">© Spencer Tasa <span id="footer-year"></span>. All rights reserved</p>
                     </div>
                 </div>
             </div>
@@ -1053,6 +1053,14 @@
     <!-- End Footer Area -->
 
     <!-- JS ============================================ -->
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const currentYear = new Date().getFullYear();
+        document.getElementById("footer-year").textContent = currentYear;
+    });
+    </script>
+
     <script src="assets/js/vendor/jquery.js"></script>
     <script src="assets/js/vendor/modernizer.min.js"></script>
     <script src="assets/js/vendor/feather.min.js"></script>
